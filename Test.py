@@ -1,0 +1,7 @@
+lista = []
+lista.append()
+
+
+
+
+
