@@ -16,6 +16,8 @@ lista_11_high = []
 lista_12_high = []
 lista_13_high = []
 lista_14_high = []
+lista_15_high = []
+lista_16_high = []
 
 parameters_deg = []
 lista_1_low = []
@@ -32,12 +34,14 @@ lista_11_low = []
 lista_12_low = []
 lista_13_low = []
 lista_14_low = []
+lista_15_low = []
+lista_16_low = []
 
 class listy():
 
-    def Zapis_do_listy(self,rms,min_amp,f_min_amp,f_max_amp,suma,f_roll_off,amp_roll_off,zero,amp_spek,cent,cent_roll_off,mfcc,dst_1,dst_2,
-                       rms_deg,min_amp_deg,f_min_amp_deg,f_max_amp_deg,suma_deg,f_roll_off_deg,amp_roll_off_deg,zero_deg,amp_spek_deg,cent_deg,cent_roll_off_deg,mfcc_deg,dst_1_deg,dst_2_deg,
-                       i,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14):
+    def Zapis_do_listy(self,rms,min_amp,f_min_amp,f_max_amp,suma,f_roll_off,amp_roll_off,zero,amp_spek,cent,cent_roll_off,mfcc,dst_1,dst_2,dyn,dyn_roll,
+                       rms_deg,min_amp_deg,f_min_amp_deg,f_max_amp_deg,suma_deg,f_roll_off_deg,amp_roll_off_deg,zero_deg,amp_spek_deg,cent_deg,cent_roll_off_deg,mfcc_deg,dst_1_deg,dst_2_deg,dyn_deg,dyn_roll_deg,
+                       i,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16):
 
         lista_1_high.insert(i, rms)
         lista_2_high.insert(i, min_amp)
@@ -53,8 +57,9 @@ class listy():
         lista_12_high.insert(i, cent_roll_off)
         lista_13_high.insert(i, dst_1)
         lista_14_high.insert(i, dst_2)
-        #print("org1:",lista_13_high)
-        #print("org2:", lista_14_high)
+        lista_15_high.insert(i, dyn)
+        lista_16_high.insert(i, dyn_roll)
+
         lista_1_low.insert(i, rms_deg)
         lista_2_low.insert(i, min_amp_deg)
         lista_3_low.insert(i, f_min_amp_deg)
@@ -69,9 +74,10 @@ class listy():
         lista_12_low.insert(i, cent_roll_off_deg)
         lista_13_low.insert(i, dst_1_deg)
         lista_14_low.insert(i, dst_2_deg)
-        #print("deg1:",lista_13_low)
-        #print("deg2:", lista_14_low)
-        parameters = [lista_1_high, lista_2_high, lista_3_high, lista_4_high, lista_5_high, lista_6_high, lista_7_high, lista_8_high,lista_9_high,lista_10_high,lista_11_high,lista_12_high,lista_13_high,lista_14_high]
-        parameters_deg = [lista_1_low, lista_2_low, lista_3_low, lista_4_low, lista_5_low, lista_6_low, lista_7_low, lista_8_low,lista_9_low,lista_10_low,lista_11_low,lista_12_low,lista_13_low,lista_14_low]
+        lista_15_low.insert(i, dyn_deg)
+        lista_16_low.insert(i, dyn_roll_deg)
 
-        Odleglosc.odleglosc.roznica(self,parameters,parameters_deg,i,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14)
+        parameters = [lista_1_high, lista_2_high, lista_3_high, lista_4_high, lista_5_high, lista_6_high, lista_7_high, lista_8_high,lista_9_high,lista_10_high,lista_11_high,lista_12_high,lista_13_high,lista_14_high,lista_15_high,lista_16_high]
+        parameters_deg = [lista_1_low, lista_2_low, lista_3_low, lista_4_low, lista_5_low, lista_6_low, lista_7_low, lista_8_low,lista_9_low,lista_10_low,lista_11_low,lista_12_low,lista_13_low,lista_14_low,lista_15_low,lista_16_low]
+
+        Odleglosc.odleglosc.roznica(self,parameters,parameters_deg,i,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16)

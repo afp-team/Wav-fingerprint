@@ -8,7 +8,7 @@ import math
 class parametry():
 
     def parameters(self,data, fragment_data, fs_rate, ilosc_probek, data_deg, fragment_data_deg, fs_rate_deg, ilosc_probek_deg, komorka,
-                   lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14):
+                   lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16):
 # FFT
         #print("fragment: ",fragment_data)
         widmo = fragment_data / np.max(np.abs(data))
@@ -91,7 +91,7 @@ class parametry():
             dst_1 = math.sqrt((pow(abs((max(Amplituda) - 5) - max(amp_euklides)), 2) +
                               pow(f_euklides[amp_euklides.index(max(amp_euklides)) + 1] -
                                   f_euklides[amp_euklides.index(max(amp_euklides))], 2)))
-        #print("org".dst_1)
+
         if amp_euklides[amp_euklides.index(max(amp_euklides)) - 1] == -100:
             dst_2 = 1
         else:
@@ -142,6 +142,17 @@ class parametry():
         suma_list_mfcc = sum(mfcc_org)
         suma_mfcc = sum(suma_list_mfcc)
 
+# Dynamic
+        mean = sum(Amplituda) / len(Amplituda)
+        dynamic = max(Amplituda) / mean
+
+        Amplituda_roll_off = []
+        for i, x in enumerate(Amplituda):
+            if i <= freq_spectrall_roll_off:
+                Amplituda_roll_off.insert(i, Amplituda[i])
+
+        mean_roll_off = sum(Amplituda_roll_off) / len(Amplituda_roll_off)
+        dynamic_roll_off = max(Amplituda_roll_off / mean_roll_off)
 
 #### Zdegradowany plik, parametry:
 
@@ -271,9 +282,23 @@ class parametry():
         suma_list_mfcc_deg = sum(mfcc_deg)
         suma_mfcc_deg = sum(suma_list_mfcc_deg)
 
-        Lista.listy.Zapis_do_listy(self,rms,minimalna_amplituda_calego_widma,czestotliwosc_minimalnej_amplitudy,czestotliwosc_maksymalnej_amplitudy,suma,f[freq_spectrall_roll_off],spectrall_roll_off_amp,zero_crossing_rate_counter,Suma_amp_spektrogramu,spectrall_centroid,spectrall_centroid_rol_off,suma_mfcc,dst_1,dst_2,
-                             rms_deg,minimalna_amplituda_calego_widma_deg,czestotliwosc_minimalnej_amplitudy_deg,czestotliwosc_maksymalnej_amplitudy_deg,suma_deg,f_deg[freq_spectrall_roll_off_deg],spectrall_roll_off_amp_deg,zero_crossing_rate_counter_deg,Suma_amp_spektrogramu_deg,spectrall_centroid_deg,spectrall_centroid_rol_off_deg,suma_mfcc_deg,dst_1_deg,dst_2_deg,
-                             komorka,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14)
+# Dynamic
+        mean_deg = sum(Amplituda_deg) / len(Amplituda_deg)
+        dynamic_deg = max(Amplituda_deg) / mean_deg
+
+        Amplituda_roll_off_deg = []
+        for i, x in enumerate(Amplituda_deg):
+            if i <= freq_spectrall_roll_off_deg:
+                Amplituda_roll_off_deg.insert(i, Amplituda_deg[i])
+
+        mean_roll_off_deg = sum(Amplituda_roll_off_deg) / len(Amplituda_roll_off_deg)
+        dynamic_roll_off_deg = max(Amplituda_roll_off_deg / mean_roll_off_deg)
+
+
+
+        Lista.listy.Zapis_do_listy(self,rms,minimalna_amplituda_calego_widma,czestotliwosc_minimalnej_amplitudy,czestotliwosc_maksymalnej_amplitudy,suma,f[freq_spectrall_roll_off],spectrall_roll_off_amp,zero_crossing_rate_counter,Suma_amp_spektrogramu,spectrall_centroid,spectrall_centroid_rol_off,suma_mfcc,dst_1,dst_2,dynamic,dynamic_roll_off,
+                             rms_deg,minimalna_amplituda_calego_widma_deg,czestotliwosc_minimalnej_amplitudy_deg,czestotliwosc_maksymalnej_amplitudy_deg,suma_deg,f_deg[freq_spectrall_roll_off_deg],spectrall_roll_off_amp_deg,zero_crossing_rate_counter_deg,Suma_amp_spektrogramu_deg,spectrall_centroid_deg,spectrall_centroid_rol_off_deg,suma_mfcc_deg,dst_1_deg,dst_2_deg,dynamic_deg,dynamic_roll_off_deg,
+                             komorka,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16)
 
 
         #sql dml scharakteryzować

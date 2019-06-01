@@ -16,6 +16,8 @@ lista_11 = []
 lista_12 = []
 lista_13 = []
 lista_14 = []
+lista_15 = []
+lista_16 = []
 
 class ramki():
     def __init__(self):
@@ -58,4 +60,4 @@ class ramki():
                 print("Postęp parametryzacji:", round(procent, 2), "%")
 
                 Parametry.parametry.parameters(self,data, fragment_data, fs_rate, ilosc_probek, data_deg, fragment_data_deg, fs_rate_deg, ilosc_probek_deg,i,
-                                               lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14)
+                                               lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16)

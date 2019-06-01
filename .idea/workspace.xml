@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Lista.py" line="47" />
+    <bookmark url="file://$PROJECT_DIR$/Lista.py" line="51" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dc9b38a-b3bd-48a3-9e3f-3a23705bc5a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lista.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lista.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MW2.py" beforeDir="false" afterPath="$PROJECT_DIR$/MW2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Odleglosc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Odleglosc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parametry.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parametry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ramki.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ramki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wynik.py" beforeDir="false" afterPath="$PROJECT_DIR$/Wynik.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +23,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MW2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="189" selection-start-line="189" selection-end-line="198" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test 2.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MW.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="48" column="127" selection-start-line="48" selection-start-column="127" selection-end-line="48" selection-end-column="127" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="52" lean-forward="true" selection-end-line="18" selection-end-column="52" />
+              <caret line="18" column="52" selection-end-line="18" selection-end-column="52" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -32,37 +78,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ramki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            <state relative-caret-position="294">
+              <caret line="62" column="181" selection-start-line="62" selection-start-column="181" selection-end-line="62" selection-end-column="181" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parametry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="110">
+              <caret line="299" column="402" selection-start-line="299" selection-start-column="402" selection-end-line="299" selection-end-column="402" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -73,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lista.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="280">
+              <caret line="82" column="217" lean-forward="true" selection-start-line="82" selection-start-column="217" selection-end-line="82" selection-end-column="217" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -85,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Odleglosc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="243">
+              <caret line="77" column="180" selection-start-line="77" selection-start-column="180" selection-end-line="77" selection-end-column="180" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -94,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wynik.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="311">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -125,15 +154,15 @@
         <option value="$PROJECT_DIR$/Zero_crossing_rate.py" />
         <option value="$PROJECT_DIR$/Spektogram.py" />
         <option value="$PROJECT_DIR$/Spectrall_roll_off.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Test 2.py" />
+        <option value="$PROJECT_DIR$/MW2.py" />
         <option value="$PROJECT_DIR$/Ramki.py" />
         <option value="$PROJECT_DIR$/Parametry.py" />
         <option value="$PROJECT_DIR$/Lista.py" />
         <option value="$PROJECT_DIR$/Odleglosc.py" />
         <option value="$PROJECT_DIR$/Wynik.py" />
-        <option value="$PROJECT_DIR$/MW2.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
@@ -147,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +188,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test">
+  <component name="RunManager" selected="Python.MW2">
     <configuration name="MW2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled6" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -294,9 +323,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MW2" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.MW2" />
         <item itemvalue="Python.Spektogram" />
         <item itemvalue="Python.Test 2" />
       </list>
@@ -331,12 +360,21 @@
       <workItem from="1559294050664" duration="381000" />
       <workItem from="1559294469063" duration="338000" />
       <workItem from="1559305606345" duration="89000" />
-      <workItem from="1559305751131" duration="3902000" />
+      <workItem from="1559305751131" duration="5721000" />
+      <workItem from="1559417531707" duration="3480000" />
     </task>
+    <task id="LOCAL-00001" summary="Test add">
+      <created>1559312447006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559312447006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333155000" />
+    <option name="totallyTimeSpent" value="338454000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,19 +387,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10411311" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10539846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49871466" visible="true" weight="0.44952893" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49871466" visible="true" weight="0.3795424" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5012854" side_tool="true" weight="0.3230148" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32839838" />
@@ -371,7 +408,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.39925373" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.39910024" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
@@ -402,6 +439,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test add" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled6$MW.coverage" NAME="MW Coverage Results" MODIFIED="1557313443783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Fingerprint$Test.coverage" NAME="Test Coverage Results" MODIFIED="1559311721036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -415,23 +456,13 @@
     <SUITE FILE_PATH="coverage/untitled6$MW2.coverage" NAME="MW2 Coverage Results" MODIFIED="1559135513701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled6$Maja.coverage" NAME="Maja Coverage Results" MODIFIED="1557522098799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled6$Main.coverage" NAME="Main Coverage Results" MODIFIED="1559137853229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Fingerprint$MW2.coverage" NAME="MW2 Coverage Results" MODIFIED="1559289805122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Fingerprint$MW2.coverage" NAME="MW2 Coverage Results" MODIFIED="1559421042985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/numpy/core/fromnumeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="127" selection-start-line="48" selection-start-column="127" selection-end-line="48" selection-end-column="127" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,23 +495,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Spectrall_roll_off.py" />
-    <entry file="file://$PROJECT_DIR$/MW2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test 2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Spektogram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -491,37 +505,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Parametry.py">
+    <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wynik.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Test 2.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Odleglosc.py">
+    <entry file="file://$PROJECT_DIR$/MW.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="439">
+          <caret line="48" column="127" selection-start-line="48" selection-start-column="127" selection-end-line="48" selection-end-column="127" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lista.py">
+    <entry file="file://$PROJECT_DIR$/MW2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="175">
+          <caret line="189" selection-start-line="189" selection-end-line="198" selection-end-column="58" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -531,7 +544,7 @@
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="52" lean-forward="true" selection-end-line="18" selection-end-column="52" />
+          <caret line="18" column="52" selection-end-line="18" selection-end-column="52" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -540,24 +553,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ramki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="294">
+          <caret line="62" column="181" selection-start-line="62" selection-start-column="181" selection-end-line="62" selection-end-column="181" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.git/COMMIT_EDITMSG">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
+    <entry file="file://$PROJECT_DIR$/Parametry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="110">
+          <caret line="299" column="402" selection-start-line="299" selection-start-column="402" selection-end-line="299" selection-end-column="402" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lista.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="82" column="217" lean-forward="true" selection-start-line="82" selection-start-column="217" selection-end-line="82" selection-end-column="217" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Odleglosc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="77" column="180" selection-start-line="77" selection-start-column="180" selection-end-line="77" selection-end-column="180" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wynik.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
         </state>
       </provider>
     </entry>

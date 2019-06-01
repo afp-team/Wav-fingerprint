@@ -4,7 +4,7 @@ import Wynik
 class odleglosc():
 
     def roznica(self,parameters,parameters_deg,i,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,
-                lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14):
+                lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16):
 
 
         lista_1.insert(i, round(abs(100 - ((parameters_deg[0][i] * 100) / parameters[0][i])), 2))
@@ -21,6 +21,8 @@ class odleglosc():
         lista_12.insert(i, round(abs(100 - ((parameters_deg[11][i] * 100) / parameters[11][i])), 2))
         lista_13.insert(i, round(abs(100 - ((parameters_deg[12][i] * 100) / parameters[12][i])), 2))
         lista_14.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
+        lista_15.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
+        lista_16.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
 
         if lista_1[i] > 100:
             lista_1.remove(lista_1[i])
@@ -64,10 +66,16 @@ class odleglosc():
         if lista_14[i] > 100:
             lista_14.remove(lista_14[i])
             lista_14.insert(i, 100)
+        if lista_15[i] > 100:
+            lista_15.remove(lista_15[i])
+            lista_15.insert(i, 100)
+        if lista_16[i] > 100:
+            lista_16.remove(lista_16[i])
+            lista_16.insert(i, 100)
 
         #odejmujemy od 100 aby zbadać jak sygnał sie zmienił niezleżnie czy wartośc jet powyżej 100 czy poniżej 100-104=-4; 100-96=4 na końcu zaokrąglamy
 
-        Wynik.wynik.srednia(self,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14)
+        Wynik.wynik.srednia(self,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16)
 
 
 

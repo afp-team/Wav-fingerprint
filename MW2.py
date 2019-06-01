@@ -187,7 +187,16 @@ else:
 
 print("od_2",od_2)
 
+mean = sum(Amplituda) / len(Amplituda)
+dynamic = max(Amplituda) / mean
 
+Amplituda_roll_off = []
+for i,x in enumerate(Amplituda):
+    if i <= freq_spectrall_roll_off:
+        Amplituda_roll_off.insert(i, Amplituda[i])
+
+mean_roll_off = sum(Amplituda_roll_off) / len(Amplituda_roll_off)
+dynamic_roll_off = max(Amplituda_roll_off / mean_roll_off)
 
 
 
