@@ -21,8 +21,8 @@ class odleglosc():
         lista_12.insert(i, round(abs(100 - ((parameters_deg[11][i] * 100) / parameters[11][i])), 2))
         lista_13.insert(i, round(abs(100 - ((parameters_deg[12][i] * 100) / parameters[12][i])), 2))
         lista_14.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
-        lista_15.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
-        lista_16.insert(i, round(abs(100 - ((parameters_deg[13][i] * 100) / parameters[13][i])), 2))
+        lista_15.insert(i, round(abs(100 - ((parameters_deg[14][i] * 100) / parameters[14][i])), 2))
+        lista_16.insert(i, round(abs(100 - ((parameters_deg[15][i] * 100) / parameters[15][i])), 2))
 
         if lista_1[i] > 100:
             lista_1.remove(lista_1[i])

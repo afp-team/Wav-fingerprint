@@ -50,9 +50,9 @@ class wynik():
             print("Róźnica12 centroid roll off: ", srednia_12)
             print("Róźnica13 Euklides dis 1   : ", srednia_13)
             print("Róźnica14 Euklides dis 2   : ", srednia_14)
-            print("Róźnica14 Euklides dis 2   : ", srednia_15)
-            print("Róźnica14 Euklides dis 2   : ", srednia_16)
-            lista_suma = [srednia_1, srednia_2, srednia_3, srednia_4, srednia_5, srednia_6, srednia_7,srednia_8, srednia_9,
+            print("Róźnica15 Dynamic          : ", srednia_15)
+            print("Róźnica16 Dynamic roll off : ", srednia_16)
+            lista_suma = [srednia_1, srednia_2, srednia_4, srednia_5, srednia_6, srednia_7,srednia_8, srednia_9,
                           srednia_10, srednia_11, srednia_12,srednia_13,srednia_14,srednia_15,srednia_16]
 
             print("Sygnał różni się o:", round(sum(lista_suma) / len(lista_suma),2),"%")
