@@ -110,11 +110,7 @@ print("Suma amplitud: ", suma)
 print("Częstotliwość graniczna: ", f[freq_spectrall_roll_off], "Hz")
 print("Amplituda częstotliwości granicznej: ", spectrall_roll_off_amp)
 
-
-
-
-
-
+# Sygnał zdegradpwany:
 
 fragment_data_deg = data_deg[round(liczba_ramek_deg / 2) : round(liczba_ramek_deg / 2) + 2048]
 ilosc_probek_deg = len(fragment_data_deg)

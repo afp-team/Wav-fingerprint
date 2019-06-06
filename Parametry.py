@@ -8,7 +8,8 @@ import math
 class parametry():
 
     def parameters(self,data, fragment_data, fs_rate, ilosc_probek, data_deg, fragment_data_deg, fs_rate_deg, ilosc_probek_deg, komorka,
-                   lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16):
+                   lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,
+                   lista_15,lista_16,lista_17,lista_18,lista_19,lista_20,lista_21,lista_22,lista_23,lista_24,lista_25,lista_26,lista_27,lista_28):
 # FFT
         #print("fragment: ",fragment_data)
         widmo = fragment_data / np.max(np.abs(data))
@@ -101,8 +102,8 @@ class parametry():
 
 # Spektrogram
         f, t, Sxx = sig.spectrogram(fragment_data, fs=fs_rate, window=np.hamming(ilosc_probek),
-                                                nperseg=ilosc_probek, noverlap=ilosc_probek * 0.75,
-                                                scaling='spectrum', mode='magnitude')
+                            nperseg=ilosc_probek, noverlap=(ilosc_probek) * 0.75,
+                            scaling='spectrum', mode='magnitude')
 
         # plt.figure(figsize=(16, 8))
         # plt.pcolormesh(t, f, 20 * np.log10(Sxx))
@@ -238,7 +239,7 @@ class parametry():
             dst_1_deg = math.sqrt((pow(abs((max(Amplituda_deg) - 5) - max(amp_euklides_deg)), 2) +
                               pow(f_euklides_deg[amp_euklides_deg.index(max(amp_euklides_deg)) + 1] -
                                   f_euklides_deg[amp_euklides_deg.index(max(amp_euklides_deg))], 2)))
-        #print("org".dst_1)
+
         if amp_euklides_deg[amp_euklides_deg.index(max(amp_euklides_deg)) - 1] == -100:
             dst_2_deg = 1
         else:
@@ -248,8 +249,8 @@ class parametry():
 
     # Spektrogram
         f_deg, t_deg, Sxx_deg = sig.spectrogram(fragment_data_deg, fs=fs_rate_deg, window=np.hamming(ilosc_probek_deg),
-                                                nperseg=ilosc_probek_deg, noverlap=ilosc_probek_deg * 0.75,
-                                                scaling='spectrum', mode='magnitude')
+                                        nperseg=ilosc_probek_deg, noverlap=(ilosc_probek_deg) * 0.75,
+                                        scaling='spectrum', mode='magnitude')
 
         #plt.figure(figsize=(16, 8))
         #plt.pcolormesh(t, f, 20 * np.log10(Sxx))
@@ -296,9 +297,9 @@ class parametry():
 
 
 
-        Lista.listy.Zapis_do_listy(self,rms,minimalna_amplituda_calego_widma,czestotliwosc_minimalnej_amplitudy,czestotliwosc_maksymalnej_amplitudy,suma,f[freq_spectrall_roll_off],spectrall_roll_off_amp,zero_crossing_rate_counter,Suma_amp_spektrogramu,spectrall_centroid,spectrall_centroid_rol_off,suma_mfcc,dst_1,dst_2,dynamic,dynamic_roll_off,
-                             rms_deg,minimalna_amplituda_calego_widma_deg,czestotliwosc_minimalnej_amplitudy_deg,czestotliwosc_maksymalnej_amplitudy_deg,suma_deg,f_deg[freq_spectrall_roll_off_deg],spectrall_roll_off_amp_deg,zero_crossing_rate_counter_deg,Suma_amp_spektrogramu_deg,spectrall_centroid_deg,spectrall_centroid_rol_off_deg,suma_mfcc_deg,dst_1_deg,dst_2_deg,dynamic_deg,dynamic_roll_off_deg,
-                             komorka,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16)
+        Lista.listy.Zapis_do_listy(self,rms,minimalna_amplituda_calego_widma,czestotliwosc_minimalnej_amplitudy,czestotliwosc_maksymalnej_amplitudy,suma,f[freq_spectrall_roll_off],spectrall_roll_off_amp,zero_crossing_rate_counter,Suma_amp_spektrogramu,spectrall_centroid,spectrall_centroid_rol_off,suma_list_mfcc,dst_1,dst_2,dynamic,dynamic_roll_off,
+                             rms_deg,minimalna_amplituda_calego_widma_deg,czestotliwosc_minimalnej_amplitudy_deg,czestotliwosc_maksymalnej_amplitudy_deg,suma_deg,f_deg[freq_spectrall_roll_off_deg],spectrall_roll_off_amp_deg,zero_crossing_rate_counter_deg,Suma_amp_spektrogramu_deg,spectrall_centroid_deg,spectrall_centroid_rol_off_deg,suma_list_mfcc_deg,dst_1_deg,dst_2_deg,dynamic_deg,dynamic_roll_off_deg,
+                             komorka,ilosc_probek,lista_1,lista_2,lista_3,lista_4,lista_5,lista_6,lista_7,lista_8,lista_9,lista_10,lista_11,lista_12,lista_13,lista_14,lista_15,lista_16,lista_17,lista_18,lista_19,lista_20,lista_21,lista_22,lista_23,lista_24,lista_25,lista_26,lista_27,lista_28)
 
 
         #sql dml scharakteryzować

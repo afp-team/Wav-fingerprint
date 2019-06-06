@@ -1,14 +1,7 @@
 from __future__ import print_function
-from scipy.fftpack import fft
-from scipy.io import wavfile
 import scipy.io.wavfile as wavfile
-import scipy
-import scipy.fftpack
 import numpy as np
-from matplotlib import pyplot as plt
-import pyglet
 import wave
-from scipy.fftpack import fftshift
 
 fs_rate, data = wavfile.read("Classic_128.wav")
 sample = wave.open("Classic_128.wav")
@@ -26,7 +19,7 @@ sample_deg = wave.open("Classic_8.wav")
 liczba_kanalow_deg = len(data_deg.shape)
 # print("Liczba kanałów_deg: ", liczba_kanalow_deg)
 parametry_deg = sample_deg.getparams()
-print("Parametry pliku zdegradowanego: ", parametry_deg)
+print("Parametry pliku zdegradowanego: ", parametry_deg, "\n")
 liczba_ramek_deg = sample_deg.getnframes()
 # print("liczba ramek_deg: ", liczba_ramek_deg)
 #music = pyglet.resource.media("Classic_8.wav")
@@ -41,6 +34,8 @@ lenght_deg = len(data_deg.shape)
 data_deg = data_deg.astype(float)
 if lenght_deg == 2:
     data_deg = data_deg.sum(axis=1) / 2
+
+# Stgnał oryginalny:
 
 fragment_data = data[round(liczba_ramek / 2) : round(liczba_ramek / 2) + 2048]
 ilosc_probek = len(fragment_data)
@@ -58,44 +53,15 @@ for i,x in enumerate(widmo_data):
 spectrall_roll_off = (sum(Amplituda)/len(Amplituda)) * 0.85
 suma = sum(Amplituda)
 
-minimalna_amplituda_calego_widma = min(Amplituda)
-maksymalna_amplituda_calego_widma = max(Amplituda)
-
-for i,x in enumerate(Amplituda):
-    if minimalna_amplituda_calego_widma == x:
-        czestotliwosc_minimalnej_amplitudy = Czestotliwosc[i]
-    if maksymalna_amplituda_calego_widma == x:
-        czestotliwosc_maksymalnej_amplitudy = Czestotliwosc[i]
-
 freq_spectrall_roll_off = 0
 spectrall_roll_off_amp = 0
-for i,x in enumerate(Amplituda):
-    if (Amplituda[i] <=spectrall_roll_off+1) and (Amplituda[i] >=spectrall_roll_off-1):
-        spectrall_roll_off_amp = x
-        freq_spectrall_roll_off = i
-
-plt.plot(Czestotliwosc, Amplituda)
-plt.xlim(0, Czestotliwosc[-1])
-plt.ylim(minimalna_amplituda_calego_widma, 0)
-plt.xlabel('częstotliwość [Hz]')
-plt.ylabel('amplituda widma [dB]')
-plt.title('Widmo instrumentu')
-plt.show()
-
 for i, x in enumerate(Amplituda):
     if (Amplituda[i] <=spectrall_roll_off+1) & (Amplituda[i] >=spectrall_roll_off-1):
         spectrall_roll_off_amp = Amplituda[i]
         freq_spectrall_roll_off = i
 
-minimalna_amplituda = min(Amplituda[0:freq_spectrall_roll_off])
 
-plt.plot(Czestotliwosc, Amplituda)
-plt.xlim(0, Czestotliwosc[freq_spectrall_roll_off])
-plt.ylim(minimalna_amplituda, 0)
-plt.xlabel('częstotliwość [Hz]')
-plt.ylabel('amplituda widma [dB]')
-plt.title('Widmo')
-plt.show()
+
 mean = sum(Amplituda) / len(Amplituda)
 dynamic = max(Amplituda) / mean
 
@@ -106,3 +72,45 @@ for i, x in enumerate(Amplituda):
 
 mean_roll_off = sum(Amplituda_roll_off) / len(Amplituda_roll_off)
 dynamic_roll_off = max(Amplituda_roll_off / mean_roll_off)
+
+print("Dynamika oryginalnego użytecznego sygnału:", dynamic_roll_off)
+print("Dynamika oryginalnego całego sygnału:", dynamic, "\n")
+
+# Sygnał zdeggradowany:
+
+fragment_data_deg = data_deg[round(liczba_ramek_deg / 2) : round(liczba_ramek_deg / 2) + 2048]
+ilosc_probek_deg = len(fragment_data_deg)
+widmo_deg = fragment_data_deg / np.max(np.abs(data_deg))
+widmo_data_deg = 10 * np.log10(np.abs(np.fft.rfft(widmo_deg * np.hamming(ilosc_probek_deg))) / 1024)
+f_deg = np.fft.rfftfreq(2048, 1 / fs_rate_deg)
+
+Czestotliwosc_deg = []
+Amplituda_deg = []
+for i,x in enumerate(widmo_data_deg):
+    if f_deg[i] <= 20000:
+        Czestotliwosc_deg.insert(i,f_deg[i])
+        Amplituda_deg.insert(i,widmo_data_deg[i])
+
+spectrall_roll_off_deg = (sum(Amplituda_deg)/len(Amplituda_deg)) * 0.85
+
+freq_spectrall_roll_off_deg = 0
+spectrall_roll_off_amp_deg = 0
+
+for i, x in enumerate(Amplituda_deg):
+    if (Amplituda_deg[i] <=spectrall_roll_off_deg + 1) & (Amplituda_deg[i] >=spectrall_roll_off_deg - 1):
+        spectrall_roll_off_amp_deg = Amplituda_deg[i]
+        freq_spectrall_roll_off_deg = i
+
+mean_deg = sum(Amplituda_deg) / len(Amplituda_deg)
+dynamic_deg = max(Amplituda_deg) / mean_deg
+
+Amplituda_roll_off_deg = []
+for i, x in enumerate(Amplituda_deg):
+    if i <= freq_spectrall_roll_off_deg:
+        Amplituda_roll_off_deg.insert(i, Amplituda_deg[i])
+
+mean_roll_off_deg = sum(Amplituda_roll_off_deg) / len(Amplituda_roll_off_deg)
+dynamic_roll_off_deg = max(Amplituda_roll_off_deg / mean_roll_off_deg)
+
+print("Dynamika zdegradowanego użytecznego sygnału:", dynamic_roll_off_deg)
+print("Dynamika zdegrodowanego całego sygnału:", dynamic_deg)

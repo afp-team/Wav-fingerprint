@@ -123,10 +123,10 @@ spectrall_centroid = suma_spectrall_centroid / sum(Amplituda)
 print("suma_spectrall_centroid:",spectrall_centroid,spectrall_centroid_rol_off)
 
 
-f, t, Sxx = sig.spectrogram(data[0:2048], fs=fs_rate, window=np.hamming(2048), nperseg=2048, noverlap=1536, scaling='spectrum', mode='magnitude')
+f, t, Sxx = sig.spectrogram(data[0:4096], fs=fs_rate, window=np.hamming(2048), nperseg=2048, noverlap=1536, scaling='spectrum', mode='magnitude')
 
 plt.figure(figsize=(16,8))
-plt.pcolormesh(t, f, 20 * np.log10(Sxx))
+plt.pcolormesh(t, f, 10 * np.log10(Sxx))
 plt.xlabel('czas [s]')
 plt.ylabel('częstotliwość [Hz]')
 plt.title('Spektrogram dźwięku klarnetu')
