@@ -74,12 +74,15 @@ class parametry():
         indeks = []
 
         for poczatek, koniec in zip(poczatki, konce):
-            p = np.argmax(Amplituda[poczatek:koniec]) + poczatek
-            a, b, c = Amplituda[p - 1:p + 2]
-            k = 0.5 * (a - c) / (a - 2 * b + c)
-            f_euklides.append((p + k) * fs_rate / ilosc_probek)
-            indeks.append(p)
-
+            if Amplituda[poczatek:koniec] != []:
+                p = np.argmax(Amplituda[poczatek:koniec]) + poczatek
+                a, b, c = Amplituda[p - 1:p + 2]
+                k = 0.5 * (a - c) / (a - 2 * b + c)
+                f_euklides.append((p + k) * fs_rate / ilosc_probek)
+                indeks.append(p)
+            else:
+                indeks.append(0)
+                f_euklides.append(-100)
         f_euklides.append(-100)
         amp_euklides = [-100, -100]
 
@@ -221,12 +224,15 @@ class parametry():
         indeks_deg = []
 
         for poczatek, koniec in zip(poczatki, konce):
-            p = np.argmax(Amplituda_deg[poczatek:koniec]) + poczatek
-            a, b, c = Amplituda_deg[p - 1:p + 2]
-            k = 0.5 * (a - c) / (a - 2 * b + c)
-            f_euklides_deg.append((p + k) * fs_rate / ilosc_probek_deg)
-            indeks_deg.append(p)
-
+            if Amplituda_deg[poczatek:koniec] != []:
+                p = np.argmax(Amplituda_deg[poczatek:koniec]) + poczatek
+                a, b, c = Amplituda_deg[p - 1:p + 2]
+                k = 0.5 * (a - c) / (a - 2 * b + c)
+                f_euklides_deg.append((p + k) * fs_rate / ilosc_probek_deg)
+                indeks_deg.append(p)
+            else:
+                indeks_deg.append(0)
+                f_euklides_deg.append(-100)
         f_euklides_deg.append(-100)
         amp_euklides_deg = [-100, -100]
 
@@ -247,7 +253,7 @@ class parametry():
                               pow(f_euklides_deg[amp_euklides_deg.index(max(amp_euklides_deg)) - 1] -
                                   f_euklides_deg[amp_euklides_deg.index(max(amp_euklides_deg))], 2)))
 
-    # Spektrogram
+# Spektrogram
         f_deg, t_deg, Sxx_deg = sig.spectrogram(fragment_data_deg, fs=fs_rate_deg, window=np.hamming(ilosc_probek_deg),
                                         nperseg=ilosc_probek_deg, noverlap=(ilosc_probek_deg) * 0.75,
                                         scaling='spectrum', mode='magnitude')

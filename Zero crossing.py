@@ -1,6 +1,8 @@
 from __future__ import print_function
 import scipy.io.wavfile as wavfile
 import wave
+from scipy.io.wavfile import read
+import matplotlib.pyplot as plt
 
 fs_rate, data = wavfile.read("Classic_128.wav")
 sample = wave.open("Classic_128.wav")
@@ -13,8 +15,8 @@ liczba_ramek = sample.getnframes()
 #music = pyglet.resource.media("Classic_128.wav")
 #music.play()
 
-fs_rate_deg, data_deg = wavfile.read("Classic_8.wav")
-sample_deg = wave.open("Classic_8.wav")
+fs_rate_deg, data_deg = wavfile.read("Classic_80.wav")
+sample_deg = wave.open("Classic_80.wav")
 liczba_kanalow_deg = len(data_deg.shape)
 # print("Liczba kanałów_deg: ", liczba_kanalow_deg)
 parametry_deg = sample_deg.getparams()
@@ -45,6 +47,12 @@ zero_crossing_rate = zero_crossing_rate_counter / len(fragment_data)
 
 print("Ilość przejśc przez zero dla sygnału oryginalnego:", zero_crossing_rate_counter, "\n")
 
+plt.plot(fragment_data)
+plt.ylabel("Amplituda")
+plt.xlabel("Czas")
+plt.title("Próbki w czasie")
+plt.show()
+
 # Sygnał zdegradowany:
 
 fragment_data_deg = data_deg[round(liczba_ramek_deg / 2) : round(liczba_ramek_deg / 2) + 2048]
@@ -56,4 +64,8 @@ zero_crossing_rate_deg = zero_crossing_rate_counter_deg / len(fragment_data_deg)
 
 print("Ilość przejśc przez zero dla sygnału zdegradowanego:", zero_crossing_rate_counter_deg)
 
-#dodać przebieg sygnału w dziedzinie czasu
+plt.plot(fragment_data_deg)
+plt.ylabel("Amplituda")
+plt.xlabel("Czas")
+plt.title("Próbki w czasie")
+plt.show()

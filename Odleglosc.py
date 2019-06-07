@@ -10,8 +10,14 @@ class odleglosc():
 
         lista_1.insert(i, round(abs(100 - ((parameters_deg[0][i] * 100) / parameters[0][i])), 2))
         lista_2.insert(i, round(abs(100 - ((parameters_deg[1][i] * 100) / parameters[1][i])), 2))
-        lista_3.insert(i, round(abs(100 - ((parameters_deg[2][i] * 100) / parameters[2][i])), 2))
-        lista_4.insert(i, round(abs(100 - ((parameters_deg[3][i] * 100) / parameters[3][i])), 2))
+        if parameters[2][i] != 0:
+            lista_3.insert(i, round(abs(100 - ((parameters_deg[2][i] * 100) / parameters[2][i])), 2))
+        else:
+            lista_3.insert(i, round(abs(100 - ((parameters_deg[2][i] * 100) / 1)), 2))
+        if parameters[3][i] != 0:
+            lista_4.insert(i, round(abs(100 - ((parameters_deg[3][i] * 100) / parameters[3][i])), 2))
+        else:
+            lista_4.insert(i, round(abs(100 - ((parameters_deg[3][i] * 100) / 1)), 2))
         lista_5.insert(i, round(abs(100 - ((parameters_deg[4][i] * 100) / parameters[4][i])), 2))
         lista_6.insert(i, round(abs(100 - ((parameters_deg[5][i] * 100) / parameters[5][i])), 2))
         lista_7.insert(i, round(abs(100 - ((parameters_deg[6][i] * 100) / parameters[6][i])), 2))

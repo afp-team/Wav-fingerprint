@@ -4,8 +4,8 @@ import wave
 import pyglet
 import Ramki
 
-fs_rate, data = wavfile.read("Classic_128.wav")
-sample = wave.open("Classic_128.wav")
+fs_rate, data = wavfile.read("Próbki_zdegradowane/Jazz_128.wav")
+sample = wave.open("Próbki_zdegradowane/Jazz_128.wav")
 liczba_kanalow = len(data.shape)
 #print("Liczba kanałów: ", liczba_kanalow)
 parametry = sample.getparams()
@@ -15,8 +15,8 @@ liczba_ramek = sample.getnframes()
 #music = pyglet.resource.media("Classic_128.wav")
 #music.play()
 
-fs_rate_deg, data_deg = wavfile.read("Classic_80.wav")
-sample_deg = wave.open("Classic_80.wav")
+fs_rate_deg, data_deg = wavfile.read("Próbki_zdegradowane/Jazz_8.wav")
+sample_deg = wave.open("Próbki_zdegradowane/Jazz_8.wav")
 liczba_kanalow_deg = len(data_deg.shape)
 # print("Liczba kanałów_deg: ", liczba_kanalow_deg)
 parametry_deg = sample_deg.getparams()
